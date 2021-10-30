@@ -34,7 +34,7 @@ public class Entitymanagerrunner implements CommandLineRunner {
 	    Manager m2=new Manager(1,"Ram",9.0);
 	    
 	    em.persist(m1);
-	    em.persist(m2);
+	    em.persist(m2); //two different data
 		
 	    Manager m3=em.find(Manager.class,9.0);
 	    System.out.println(m3);
@@ -45,7 +45,7 @@ public class Entitymanagerrunner implements CommandLineRunner {
 	    
 	    em.remove(m2);
 
-	     ((EntityTransaction) em).commit();
+	     ((EntityTransaction) em).commit();// here commit is saving the changes 
 	    
 	}
 

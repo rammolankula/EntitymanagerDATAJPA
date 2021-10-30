@@ -1,0 +1,2 @@
+# EntitymanagerDATAJPA
+Pure jpa implementation 
